@@ -1,0 +1,88 @@
+body {
+    background: #fafafa;
+}
+
+@keyframes slide-right {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 30%;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    animation: slide-right 3000s infinite linear;
+    width: 99%;
+    height: 156px;
+    padding: 0;
+}
+
+.chicken {
+    position: absolute;
+    left: 700px;
+    bottom: 0;
+    height: 45px;
+    width: 45px;
+    background-image: url(chicken.png);
+}
+
+.cactus {
+    bottom: 0;
+    position: absolute;
+    height: 81px;
+    width: 48px;
+    background-image: url(cactus.png);
+}
+
+.score {
+    bottom: 200%;
+    right: 10%;
+    position: absolute;
+    font-family: monospace;
+    color: grey;
+    font-size: 200%;
+    font-weight: lighter;
+}
+
+.final-score {
+    font-family: monospace;
+    color: rgb(170, 170, 170);
+    font-size: 20px;
+    font-style: italic;
+    margin: 15px;
+}
+
+.game-over{
+    width: 99vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+.game-over h1{
+    color: grey;
+    font-size: 60px;
+    margin: 0;
+}
+
+#try-again{
+    background: grey;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
